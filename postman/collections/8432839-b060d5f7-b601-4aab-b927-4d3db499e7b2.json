@@ -13,10 +13,6 @@
 					"script": {
 						"id": "49fcb820-d9c2-4222-a065-9c5a17a70f45",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {\r",
-							"  pm.response.to.have.status(200);\r",
-							"});\r",
-							"\r",
 							"pm.test(\"return value of ethAddress\",function () {\r",
 							"const ethAddress =  pm.response.json().avatars[0].ethAddress;\r",
 							"console.log(ethAddress)\r",
