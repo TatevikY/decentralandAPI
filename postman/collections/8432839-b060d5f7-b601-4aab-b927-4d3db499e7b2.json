@@ -27,7 +27,7 @@
 							"\r",
 							"pm.test(\"return value of name\",function () {\r",
 							"const name =  pm.response.json().avatars[0].name\r",
-							"pm.name == 'TatevikYR'\r",
+							"pm.name.equal('TatevikYR')\r",
 							"console.log(name)\r",
 							"});"
 						],
