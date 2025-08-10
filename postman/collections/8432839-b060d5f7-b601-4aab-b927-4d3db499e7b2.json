@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "8432839-b060d5f7-b601-4aab-b927-4d3db499e7b2",
+		"name": "decentralandAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "avatarsData",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "49fcb820-d9c2-4222-a065-9c5a17a70f45",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"  pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"const ethAddress =  pm.response.json().avatars[0].ethAddress\r",
+							"console.log(ethAddress)\r",
+							"\r",
+							"const wearables =  pm.response.json().avatars[0].avatar.wearables\r",
+							"console.log(wearables)\r",
+							"\r",
+							"const name =  pm.response.json().avatars[0].name\r",
+							"console.log(name)"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"id": "8432839-84865120-5886-494f-9ea5-3d06df2b73d3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://peer.decentraland.org/lambdas/profiles/0x1072205d572f46cf77c590e8805e8bae0de22876",
+					"protocol": "https",
+					"host": [
+						"peer",
+						"decentraland",
+						"org"
+					],
+					"path": [
+						"lambdas",
+						"profiles",
+						"0x1072205d572f46cf77c590e8805e8bae0de22876"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
