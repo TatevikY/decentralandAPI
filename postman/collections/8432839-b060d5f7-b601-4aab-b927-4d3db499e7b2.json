@@ -25,8 +25,11 @@
 							"const wearables =  pm.response.json().avatars[0].avatar.wearables\r",
 							"console.log(wearables)\r",
 							"\r",
+							"pm.test(\"return value of ethAddress\",function () {\r",
 							"const name =  pm.response.json().avatars[0].name\r",
-							"console.log(name)"
+							"pm.name == 'TatevikY'\r",
+							"console.log(name)\r",
+							"});"
 						],
 						"type": "text/javascript",
 						"packages": {}
