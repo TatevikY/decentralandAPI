@@ -1,1 +1,2 @@
-![Profile view counter on GitHub]([https://github.com/TatevikY/decentralandAPI])
+![Profile view counter on GitHub]([https://github.com/TatevikY])
+
