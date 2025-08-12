@@ -40,7 +40,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://peer.decentraland.org/lambdas/profiles/0x1072205d572f46cf77c590e8805e8bae0de22876?avatars[0][hasClaimedName]=",
+					"raw": "https://peer.decentraland.org/lambdas/profiles/0x1072205d572f46cf77c590e8805e8bae0de22876?fields=item.timestamp",
 					"protocol": "https",
 					"host": [
 						"peer",
@@ -55,12 +55,17 @@
 					"query": [
 						{
 							"key": "avatars[0][hasClaimedName]",
-							"value": ""
+							"value": "",
+							"disabled": true
 						},
 						{
 							"key": "hasConnectedWeb3",
 							"value": "true",
 							"disabled": true
+						},
+						{
+							"key": "fields",
+							"value": "item.timestamp"
 						}
 					]
 				}
